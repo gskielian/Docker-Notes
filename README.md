@@ -19,8 +19,16 @@ https://hub.docker.com/
 
 These are the commands we'll be using the most:
 
-- docker run <image> -- creates a new container each time this is invoked
+- docker run <image> #creates a new container each time this is invoked
 - docker start <name or id>
 - docker stop <name or id>
-- docker ps -- like linux process status for docker images
-- docker rm <name or id> -- removes a container
+- docker ps #like linux process status for docker images
+- docker rm <name or id> #removes a container
+
+**you'll need to prefix with `sudo` unless you do some additional steps**
+
+Workflow for getting started
+
+- docker login #will ask for your dockerhub login password -- can be set up for alternative hubs
+- docker commit <container hash> <new name>
+
