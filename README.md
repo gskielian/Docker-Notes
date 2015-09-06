@@ -32,7 +32,7 @@ Example Workflow for getting started with image called "ubuntu"
 - docker login #will ask for your dockerhub login password -- can be set up for alternative hubs
 
 - docker pull ubuntu
-- docker run -P -i -t ubuntu /bin/bash #will bring this terminal into the docker image
+- docker run -p 22 -i -t ubuntu /bin/bash #will bring this terminal into the docker image
 
 in a separate window do
 - docker ps # to find the hash of the docker image
