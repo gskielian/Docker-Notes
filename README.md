@@ -27,8 +27,14 @@ These are the commands we'll be using the most:
 
 **you'll need to prefix with `sudo` unless you do some additional steps**
 
-Workflow for getting started
+Example Workflow for getting started with image called "ubuntu"
 
 - docker login #will ask for your dockerhub login password -- can be set up for alternative hubs
-- docker commit <container hash> <new name>
+
+- docker pull ubuntu
+- docker run -i -t ubuntu /bin/bash #will bring this terminal into the docker image
+
+in a separate window do
+- docker ps # to find the hash of the docker image
+- docker commit <image hash> <new name>
 
