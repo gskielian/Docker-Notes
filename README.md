@@ -34,7 +34,10 @@ Example Workflow for getting started with image called "ubuntu"
 - docker pull ubuntu
 - docker run -p 22 -i -t ubuntu /bin/bash #will bring this terminal into the docker image
 
-in a separate window do
+in a separate window do:
 - docker ps # to find the hash of the docker image
-- docker commit <image hash> <new name>
+- docker commit <current image hash> ur_username/image_name
+- docker push ur_username/image_name
+
+...then you have pushed an image to dockerhub
 
