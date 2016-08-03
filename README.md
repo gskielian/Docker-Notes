@@ -36,7 +36,7 @@ Example Workflow for getting started with image called "ubuntu"
 
 in a separate window do:
 - docker ps # to find the hash of the docker image
-- docker commit <current image hash> ur_username/image_name
+- docker commit -m "commit message" hash_of_image ur_username/image_name
 - docker push ur_username/image_name
 
 ...then you have pushed an image to dockerhub
