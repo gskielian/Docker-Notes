@@ -39,10 +39,12 @@ in a separate window do:
 - docker commit -m "commit message" hash_of_image ur_username/image_name
 - docker push ur_username/image_name
 
+...then you have pushed an image to dockerhub
+
+
 Track your images by tagging them before pushing to docker-hub:
 - docker images # to find image id
 - docker tag <image-id> <ur_uesername/image_name>:<your-custom-tag>
 - docker push <username/image_name>:<your-custom-tag>
 
-...then you have pushed an image to dockerhub
 
